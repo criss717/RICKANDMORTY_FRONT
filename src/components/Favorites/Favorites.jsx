@@ -9,7 +9,7 @@ const Favorites = (props) => {
     const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(getFav())
-    },[])
+    },[dispatch])
 
     //handle events
     const handleOrder = (e)=>{

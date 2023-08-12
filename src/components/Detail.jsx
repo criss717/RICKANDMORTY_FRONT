@@ -21,7 +21,7 @@ const Detail = (props) => {
         return ()=>{
             dispatch(cleanDetail()) // willdind unmontain
         } 
-    },[idDetail])
+    },[idDetail,dispatch])
     
     // modificación estado episodeRandom       
     useEffect(() => {        
