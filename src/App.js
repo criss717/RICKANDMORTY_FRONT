@@ -59,7 +59,7 @@ function App(props) {
       }   
  
    async function login(userData) { //simula seguridad
-      const { email, password } = userData;     
+      // const { email, password } = userData;     
       try {
          // const {data} = await axios(`/rickandmorty/login/?email=${email}&password=${password}`)
          // const {access} = data;
