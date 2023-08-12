@@ -69,7 +69,7 @@ function App(props) {
             navigate('/home') //para redirigirnos a /Home 
          }             
       } catch ({response}) {         
-         alert(response.data.message) // traemos el mensaje q enviamos en el archivo del server login.js
+         // alert(response.data.message) // traemos el mensaje q enviamos en el archivo del server login.js
       }      
    }
    const logOut=()=>{
