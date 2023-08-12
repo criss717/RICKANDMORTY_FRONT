@@ -27,7 +27,7 @@ function App(props) {
       if(!id) alert('Campo requerido')
       else if(characters.findIndex((elem)=>elem.id===Number(id))===-1){          
          try {
-            const {data}= await axios.get(`http://localhost:3001/rickandmorty/character/${id}`)
+            const {data}= await axios.get(`/rickandmorty/character/${id}`)
             setCharacters((oldChars) => [...oldChars, data]);                  
          } catch (error) {                       
             window.alert(error.response.data)
@@ -59,10 +59,9 @@ function App(props) {
       }   
  
    async function login(userData) { //simula seguridad
-      const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const { email, password } = userData;     
       try {
-         const {data} = await axios(URL + `?email=${email}&password=${password}`)
+         const {data} = await axios(`/rickandmorty/login?email=${email}&password=${password}`)
          const {access} = data;
          setAccess(data);
          if(access){

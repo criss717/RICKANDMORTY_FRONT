@@ -1,11 +1,10 @@
 import { REMOVE_FAV, ADD_FAV, ORDER, FILTER,GET_FAV, GET_DETAIL, CLEAN_DETAIL } from "./types";
 import axios from 'axios'
 
-export const getFav = ()=>{
-   const endpoint = 'http://localhost:3001/rickandmorty/fav';
+export const getFav = ()=>{   
    return async (dispatch) => {
       try {
-         const {data} = await axios(endpoint)
+         const {data} = await axios('/rickandmorty/fav')
          return dispatch({
             type: GET_FAV,
             payload:data
@@ -15,11 +14,10 @@ export const getFav = ()=>{
       }
    }  
 }   
-export const addFav =  (character) => {
-    const endpoint = 'http://localhost:3001/rickandmorty/fav';
+export const addFav =  (character) => {   
     return async (dispatch) => {
       try {
-         const {data} = await axios.post(endpoint, character)
+         const {data} = await axios.post('/rickandmorty/fav', character)
          return dispatch({
             type: ADD_FAV,
             payload: data,
@@ -31,11 +29,10 @@ export const addFav =  (character) => {
     };
 }
 
- export const removeFav = (id) => {
-    const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
+ export const removeFav = (id) => {    
     return async (dispatch) => {
       try {
-         const {data} = await axios.delete(endpoint)
+         const {data} = await axios.delete('/rickandmorty/fav/' + id)
          return dispatch({
             type: REMOVE_FAV,
             payload: data,
@@ -62,9 +59,8 @@ export function orderCards(orden){
 }
 
 export function getDetail(id){
-   const endpoint=`http://localhost:3001/rickandmorty/character/${id}`
    return  (dispatch)=>{
-      axios(endpoint)
+      axios(`/rickandmorty/character/${id}`)
          .then(({data})=>{
             return dispatch({
                type:GET_DETAIL,
