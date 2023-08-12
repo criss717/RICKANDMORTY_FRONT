@@ -6,7 +6,7 @@ import store from './Redux/Store/store'
 import { Provider } from 'react-redux'
 import axios from 'axios'
 
-// axios.defaults.baseURL='http://localhost:3001' // para trabajar localmente
+//axios.defaults.baseURL='http://localhost:3001' // para trabajar localmente
 axios.defaults.baseURL='https://rickandmortyback-production-a1f1.up.railway.app/' // para producción
 
 ReactDOM.render(
