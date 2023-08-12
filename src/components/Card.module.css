@@ -1,0 +1,119 @@
+.card{
+    display: flex;
+    flex-direction: column;   
+    width: 300px;
+    height: 475px;    
+    border:3px aquamarine solid;
+    background-color: aliceblue;
+    margin: 35px;
+    border-radius: 25px;
+    transform: skew(-3deg,-1deg);
+}
+
+.card img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card:hover {
+    background-color: aquamarine;
+    border: 4px solid rgb(8, 8, 7);  
+    filter:brightness(0.5); 
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);  
+}
+
+.txt {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(178 179 170 / 85%);
+    font-size: small;
+    width: 300px;
+    height: 119px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: solid black;
+}
+
+.div1{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    height: 75%;  
+}
+
+.buttonX {
+    position: absolute;
+    left: 260px;
+    color: brown;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 7px;
+    top: 10px;
+    font-size: large;
+}
+
+.div1 button:hover{
+    background-color: brown;
+    color: aliceblue;
+    filter:brightness(1);
+    transform: scale(1.3);
+}
+
+.origin {
+    font-size: 104%;
+}
+
+.btnFavFalse {
+    position: absolute;
+    left: 13px;
+    color:azure;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 7px;
+    top: 10px;
+    font-size: x-large;
+    background-color: rgb(21, 16, 16);    
+}
+
+.btnFavTrue{
+    position: absolute;
+    left: 13px;   
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 7px;
+    top: 10px;
+    font-size: xx-large;
+    background-color: rgb(21, 16, 16);
+    color: rgb(212, 31, 31);
+    filter:brightness(1);
+    transform: scale(1.3);
+}
+
+.spanId{
+    position: absolute;
+    left: -10px;
+    top: 263px;    
+    font-size: xx-large;    
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;    
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+

@@ -1,0 +1,82 @@
+.warning {
+    border: solid red 1px;
+    border-radius: 0.2em;
+  }
+  
+.danger {
+    font-size: small;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+  }
+
+.container{
+	backdrop-filter: brightness(0.2);
+    display: flex;
+	flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    min-height: 100vh;	
+	place-items: center;	
+	margin: -10px;	
+}
+
+.form {
+	width: 350px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: flex-end;	
+    background-color: rgb(8 8 7 / 25%);
+    color: aliceblue;
+    padding: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+}
+	
+
+.container label{
+    padding: 5px;
+}
+.container button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color:  #9c7fff;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;   
+}
+
+.container button:hover{
+    background-color: blueviolet;
+    color: aliceblue;  
+}
+
+.containerGhost {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;	
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+}
+.title h1 {
+    font-size: 12vmin;
+    font-weight: 900;
+    font-family: cursive;
+    color: rgb(163 255 219 / 98%);
+    display: table-caption;
+    text-decoration: line-through black;
+}
+
