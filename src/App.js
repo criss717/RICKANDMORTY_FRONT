@@ -59,12 +59,12 @@ function App(props) {
       }   
  
    async function login(userData) { //simula seguridad
-      // const { email, password } = userData;     
+      const { email, password } = userData;     
       try {
-         // const {data} = await axios(`/rickandmorty/login/?email=${email}&password=${password}`)
-         // const {access} = data;
-         setAccess(true);
-         if(true){
+         const {data} = await axios(`/rickandmorty/login?email=${email}&password=${password}`)
+         const {access} = data;
+         setAccess(data);
+         if(access){
             playAudio(); // reproducimos sonido de portal
             navigate('/home') //para redirigirnos a /Home 
          }             
