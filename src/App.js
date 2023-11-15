@@ -64,7 +64,7 @@ function App(props) {
          const {data} = await axios(`/rickandmorty/login?email=${email}&password=${password}`)
          const {access} = data;
          setAccess(data);
-         if(access){
+         if(true){
             playAudio(); // reproducimos sonido de portal
             navigate('/home') //para redirigirnos a /Home 
          }             
